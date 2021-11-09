@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/53ccebe841.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Kawosz</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .wraper {
+            overflow: hidden;
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        nav.desktop {
+            margin-top: 20px;
+            float: left;
+            width: 300px;
+            height: 360px;
+
+        }
+
+        .desktop ul {
+
+            list-style: none;
+            text-transform: uppercase;
+            line-height: 72px;
+
+        }
+
+
+        .desktop a {
+
+            font-size: 20px;
+            display: block;
+            text-decoration: none;
+            color: black;
+        }
+
+        .desktop a:hover {
+            background-color: #C7D4D9;
+        }
+
+        .desktop a:hover i {
+            margin: 20px;
+
+        }
+
+        .desktop a i {
+            width: 70px;
+            text-align: center;
+            border-right: 2px solid black;
+
+            margin: 15px;
+        }
+
+        /* mobile */
+
+        nav.mobile {
+            position: fixed;
+            width: 80px;
+            height: 100%;
+            background-color: #536b75;
+
+        }
+
+        .mobile ul li a {
+
+            list-style: none;
+            line-height: 10vh;
+            font-size: 30px;
+            display: block;
+            text-decoration: none;
+            color: black;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .mobile i:hover {
+            color: #A68572;
+        }
+
+        .mobile {
+            z-index: 5;
+            display: none;
+        }
+
+
+
+        header {
+            margin-top: 25px;
+            float: left;
+            background-image: url(img/coffe.jpg);
+            width: calc(100% - 300px);
+            height: 360px;
+            background-size: cover;
+            background-position: center;
+            margin-top: 20px;
+
+        }
+
+        h1 {
+            margin-top: 25px;
+            font-size: 50px;
+            background-color: #734E38;
+            padding: 20px;
+            text-align: center;
+            color: #734E38;
+            text-shadow: 3px 0px 4px black;
+            letter-spacing: 2px;
+        }
+
+
+        h1 i:hover {
+            color: #536B75;
+            text-shadow: 3px 0px 4px black;
+        }
+
+        @media(max-width:800px) {
+            .desktop {
+                display: none;
+
+            }
+
+            .mobile {
+
+                display: block;
+            }
+
+            header {
+                width: 100%;
+                margin: 0;
+            }
+
+            h1 {
+
+                font-size: 2em;
+                padding-left: 80px;
+            }
+        }
+
+        @media(max-width:450px) {
+            .desktop {
+                display: none;
+
+            }
+
+            .mobile {
+
+                display: block;
+            }
+
+            header {
+                width: 100%;
+                margin: 0;
+                margin-top: 25px;
+            }
+
+            h1 {
+                font-size: 1.2em;
+                padding-left: 50px;
+            }
+
+            nav.mobile {
+                position: fixed;
+                width: 40px;
+                height: 100%;
+                background-color: #536b75;
+
+            }
+
+            .mobile ul li a {
+
+
+                line-height: 5vh;
+                font-size: 20px;
+                color: black;
+                text-align: center;
+                padding: 5px;
+            }
+        }
+
+        /* section .quotes */
+
+        section.quotes {
+
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            background-image: url(img/ziarnakawa.jpg);
+
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+
+
+
+        }
+
+        p.poem {
+
+            display: inline-block;
+            color: white;
+            font-size: 30px;
+            margin: 100px;
+            padding: 20px;
+            opacity: 0.5;
+            background-color: rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 20px 13px black;
+
+        }
+
+        @media(max-width:800px) {
+            p.poem {
+                font-size: 1.3rem;
+            }
+        }
+
+        @media(max-width:450px) {
+            p.poem {
+                font-size: 0.8rem;
+            }
+        }
+
+        /* footer */
+        footer {
+            bottom: 0;
+            position: fixed;
+            left: 0;
+            width: 100%;
+            background-color: #734E38;
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wraper">
+        <nav class="desktop">
+            <ul>
+                <li><a href="#"><i class="far fa-play-circle"></i>start</a></li>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i>oferta</a></li>
+                <li><a href="#"><i class="fas fa-rss"></i>blog</a></li>
+                <li><a href="#"><i class="far fa-calendar-alt"></i>terminarz</a></li>
+                <li><a href="#"><i class="far fa-envelope"></i>kontakt</a></li>
+            </ul>
+        </nav>
+        <nav class="mobile">
+            <ul>
+                <li><a href="#"><i class="far fa-play-circle"></i></a></li>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                <li><a href="#"><i class="fas fa-rss"></i></a></li>
+                <li><a href="#"><i class="far fa-calendar-alt"></i></a></li>
+                <li><a href="#"><i class="far fa-envelope"></i></a></li>
+            </ul>
+        </nav>
+        <header></header>
+    </div>
+
+    <h1>Zapraszam na kawkę <i class="fas fa-heart"></i></h1>
+
+    <section class="quotes">
+        <p class="poem">
+            Leci kawka wirtualna <br>
+            - ze śmietanką <br>
+            - albo czarna <br>
+            - jak doleci <br>
+            - już do Ciebie, <br>
+            będziesz po niej... <br>
+            w siódmym niebie. <br>
+            Dodam jeszcze <br>
+            - garść słodyczy <br>
+            - by złagodzić <br>
+            - smak goryczy...
+        </p>
+
+    </section>
+    <footer> &copy Beata Jakubowska </footer>
+
+</body>
+
+</html>
